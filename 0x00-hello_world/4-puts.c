@@ -4,7 +4,7 @@ int main(void)
   
 {
   
-  char try[] = "\"Programming is like building a multilingual puzzle";
+  char try[] = "Programming is like building a multilingual puzzle";
   
 
   
