@@ -3,13 +3,8 @@
 
 
 /**
- *
  * main - Entry point
- *
- *
- *
- * Return: 0 
- *
+ * Return: 0
  */
 
 
@@ -46,4 +41,3 @@ return (0);
 
 
 
-}
