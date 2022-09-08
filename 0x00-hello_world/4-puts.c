@@ -7,7 +7,7 @@
  *the program prints Programming is like building a multilingual puzzle
  *return(0)
  */
-int main(int argc, char **argv)
+int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
