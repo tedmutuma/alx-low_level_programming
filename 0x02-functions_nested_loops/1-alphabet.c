@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - main block
- *print_alphabet - print alphabets
+ * print_alphabet - print alphabets
  *
  *Description: print_alphabet use to print a to z
  *
