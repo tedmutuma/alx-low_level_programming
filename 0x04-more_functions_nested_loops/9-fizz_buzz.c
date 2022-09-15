@@ -1,7 +1,10 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
- * main - print out numbers from 1 to 100 with logic
- * Return: return integer value
+ * main - fizzbuzz algorithm.
+ *
+ * Return: zero
  */
 int main(void)
 {
@@ -9,21 +12,29 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("%s", "FizzBuzz");
-		} else if (i % 3 == 0)
+			printf("Fizz");
+		}
+		else if (i % 5 == 0 && i % 3 != 0)
 		{
-			printf("%s", "Fizz");
-		} else if (i % 5 == 0)
+			printf("Buzz");
+		}
+		else if (i % 15 == 0)
 		{
-			printf("%s", "Buzz");
-		} else
+			printf("FizzBuzz");
+		}
+		else
 		{
 			printf("%d", i);
 		}
-		if (i < 100)
-			printf("%c", ' ');
+		if (i == 100)
+		{
+			break;
+		}
+		else
+			printf(" ");
 	}
-	printf("%c", '\n');
+	printf("\n");
 	return (0);
+}
