@@ -14,7 +14,7 @@ void more_numbers(void)
 
 	int i;
 
-	nt j;
+	int j;
 
 
 
