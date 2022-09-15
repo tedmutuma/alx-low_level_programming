@@ -1,32 +1,37 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * print_diagonal - print a straight line using putchar of n size
- * @n: size of line
+ * print_diagonal - prints diagnol line.
+ *
+ * @n: number of times to print \.
  */
+
 void print_diagonal(int n)
 
 {
 
-	int x;
+	int i, j;
 
-	int y;
-
-
-
-	if (n <= 0)
-
-		_putchar('\n');
-
-	for (y = 0; y < n; y++)
-
+	for (i = 1; i <= n; i++)
 	{
-
-		for (x = y; x > 0; x--)
-
-			_putchar(' ');
-
-		_putchar('\\');
-
-		_putchar('\n');
-
+		for (j = 1; j <= i; j++)
+		{
+			if (i >= 2 && j <= i - 1)
+			{
+		       	_putchar(' ');
+			}
+			else
+			{
+				_putchar('\\');
+			}
+		}
+		if (i == n)
+		{
+			break;
+		}
+		else
+		{
+			_putchar('\n');
+		}
 	}
+	_putchar('\n');
+}
