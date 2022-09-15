@@ -16,11 +16,11 @@ void print_most_numbers(void)
 
 
 
-	for (i = 0; i <= 9; i++)
+	for (i = 48; i <= 57; i++)
 
 	{
 
-		if (i != 2 && i != 4)
+		if (i != 50 && i != 52)
 
 			_putchar(i);
 
@@ -29,4 +29,3 @@ void print_most_numbers(void)
 	_putchar('\n');
 
 }
-
