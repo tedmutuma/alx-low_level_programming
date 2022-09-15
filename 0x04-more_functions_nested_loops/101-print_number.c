@@ -1,37 +1,30 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_number - prints an integer
- * @n: integer to be printed
+ * main - print out numbers from 1 to 100 with logic
+ * Return: return integer value
  */
-
-void print_number(int n)
-
+int main(void)
 {
+	int i;
 
-	unsigned int n1;
-
-
-
-	if (n < 0)
-
+	for (i = 1; i <= 100; i++)
 	{
-
-		n1 = -n;
-
-		_putchar('-');
-
-	} else
-
-	{
-
-		n1 = n;
-
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("%s", "FizzBuzz");
+		} else if (i % 3 == 0)
+		{
+			printf("%s", "Fizz");
+		} else if (i % 5 == 0)
+		{
+			printf("%s", "Buzz");
+		} else
+		{
+			printf("%d", i);
+		}
+		if (i < 100)
+			printf("%c", ' ');
 	}
-
-	if (n1 / 10)
-	{
-		print_number(n1 / 10);
-	}
-
-	_putchar((n1 % 10) + '0');
+	printf("%c", '\n');
+	return (0);
 }
